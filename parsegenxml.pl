@@ -1,5 +1,6 @@
 # Produce KML for Google Maps from XML data on the YouBike web site
-#   http://www.youbike.com.tw/genxml.php?lat=25.07499,&amp;lng=121.51801&amp;radius=10&amp;mode=1
+# The XML data is accessible here:
+#   http://www.youbike.com.tw/genxml9.php?lat=25.037525&lng=121.56378199999995&radius=5&mode=0
 use strict;
 use warnings;
 use v5.10;
