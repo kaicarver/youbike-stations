@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Taipei YouBike bicycle-sharing stations</name>
+  <description><![CDATA[All the stations from the YouBike site.
+Their map is a little hard to use. This one makes it possible to get directions on the Google Maps Android app.]]></description>
+  <Placemark>
+    <name>Y-17青少年育樂中心</name>
+    <Snippet>林森南路/仁愛路一段路口(東北側)</Snippet>
+    <description><![CDATA[Y-17青少年育樂中心<br>
+林森南路/仁愛路一段路口(東北側)<br>
+Y17 Youth Recreation Center<br>
+Not Open]]></description>
+    <Point>
+      <coordinates>121.522331,25.038954,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>三張犁</name>
+    <Snippet>光復南路/基隆路一段364巷</Snippet>
+    <description><![CDATA[三張犁<br>
+光復南路/基隆路一段364巷<br>
+Sanchangli<br>
+]]></description>
+    <Point>
+      <coordinates>121.557617,25.034937,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>世貿三館</name>
+    <Snippet>市府路/松壽路(東南側) </Snippet>
+    <description><![CDATA[世貿三館<br>
+市府路/松壽路(東南側) <br>
+TWTC Exhibition Hall 3<br>
+]]></description>
+    <Point>
+      <coordinates>121.563690,25.035213,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>世貿二館</name>
+    <Snippet>松智路/松廉路(東北側) </Snippet>
+    <description><![CDATA[世貿二館<br>
+松智路/松廉路(東北側) <br>
+TWTC Exhibition Hall 2<br>
+]]></description>
+    <Point>
+      <coordinates>121.565659,25.034737,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>中山行政中心</name>
+    <Snippet>松江路/農安街口</Snippet>
+    <description><![CDATA[中山行政中心<br>
+松江路/農安街口<br>
+Zhongshan Dist. Admin. Office<br>
+Not open]]></description>
+    <Point>
+      <coordinates>121.533485,25.064318,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>中崙高中</name>
+    <Snippet>八德路四段91巷(中崙高中)旁</Snippet>
+    <description><![CDATA[中崙高中<br>
+八德路四段91巷(中崙高中)旁<br>
+Zhonglun High School<br>
+]]></description>
+    <Point>
+      <coordinates>121.560867,25.048780,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>中強公園</name>
+    <Snippet>松仁路153巷17號對面</Snippet>
+    <description><![CDATA[中強公園<br>
+松仁路153巷17號對面<br>
+Zhongqiang Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.569809,25.028629,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>中研公園</name>
+    <Snippet>研究院路二段12巷/研究院路二段12巷58弄(西南側)</Snippet>
+    <description><![CDATA[中研公園<br>
+研究院路二段12巷/研究院路二段12巷58弄(西南側)<br>
+Academia Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.613708,25.047424,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>五常公園</name>
+    <Snippet>松隆路/虎林街30巷口(西南側)</Snippet>
+    <description><![CDATA[五常公園<br>
+松隆路/虎林街30巷口(西南側)<br>
+Wuchang Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.574669,25.048140,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>仁愛醫院</name>
+    <Snippet>大安路一段/仁愛路四段</Snippet>
+    <description><![CDATA[仁愛醫院<br>
+大安路一段/仁愛路四段<br>
+Taipei City Hospital Renai Branch<br>
+]]></description>
+    <Point>
+      <coordinates>121.545631,25.037569,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>信義廣場(台北101)</name>
+    <Snippet>松智路/信義路(東北側) </Snippet>
+    <description><![CDATA[信義廣場(台北101)<br>
+松智路/信義路(東北側) <br>
+Xinyi Square(Taipei 101)<br>
+]]></description>
+    <Point>
+      <coordinates>121.565620,25.033039,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>信義建國路口</name>
+    <Snippet>建國南路/信義路(西南側)</Snippet>
+    <description><![CDATA[信義建國路口<br>
+建國南路/信義路(西南側)<br>
+Xinyi & Jianguo Intersection<br>
+No.1]]></description>
+    <Point>
+      <coordinates>121.537468,25.032930,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>八德市場</name>
+    <Snippet>建國南路一段/市民大道交叉口(北側) </Snippet>
+    <description><![CDATA[八德市場<br>
+建國南路一段/市民大道交叉口(北側) <br>
+Bade Market<br>
+]]></description>
+    <Point>
+      <coordinates>121.536606,25.044781,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>凌雲市場</name>
+    <Snippet>研究院路三段68巷/凌雲街(東北側)</Snippet>
+    <description><![CDATA[凌雲市場<br>
+研究院路三段68巷/凌雲街(東北側)<br>
+Linyun Market<br>
+]]></description>
+    <Point>
+      <coordinates>121.614151,25.035639,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>南昌公園</name>
+    <Snippet>和平西路一段/南昌路</Snippet>
+    <description><![CDATA[南昌公園<br>
+和平西路一段/南昌路<br>
+Nanchang Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.520256,25.026827,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>南港世貿公園</name>
+    <Snippet>三重路/經貿二路88巷(東北側)</Snippet>
+    <description><![CDATA[南港世貿公園<br>
+三重路/經貿二路88巷(東北側)<br>
+Nangang Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.614220,25.058001,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>南港國小</name>
+    <Snippet>惠民街/興東街(南側停車場)</Snippet>
+    <description><![CDATA[南港國小<br>
+惠民街/興東街(南側停車場)<br>
+Nangang Elementary School<br>
+]]></description>
+    <Point>
+      <coordinates>121.611031,25.056459,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>南港車站</name>
+    <Snippet>忠孝東路七段與忠孝東路七段415巷交叉口</Snippet>
+    <description><![CDATA[南港車站<br>
+忠孝東路七段與忠孝東路七段415巷交叉口<br>
+Nangang Rail Sta.<br>
+]]></description>
+    <Point>
+      <coordinates>121.608200,25.052469,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>台北市政府</name>
+    <Snippet>台北市政府東門(松智路) </Snippet>
+    <description><![CDATA[台北市政府<br>
+台北市政府東門(松智路) <br>
+Taipei City Hall<br>
+]]></description>
+    <Point>
+      <coordinates>121.565170,25.037798,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>台北市災害應變中心</name>
+    <Snippet>台北市信義區莊敬路391巷11弄2號</Snippet>
+    <description><![CDATA[台北市災害應變中心<br>
+台北市信義區莊敬路391巷11弄2號<br>
+Emergency Operations Center of Taipei City<br>
+]]></description>
+    <Point>
+      <coordinates>121.566116,25.028662,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>台灣科技大學</name>
+    <Snippet>基隆路四段/基隆路四段73巷交叉口</Snippet>
+    <description><![CDATA[台灣科技大學<br>
+基隆路四段/基隆路四段73巷交叉口<br>
+N.T.U.S.T<br>
+]]></description>
+    <Point>
+      <coordinates>121.539726,25.013100,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>國家圖書館</name>
+    <Snippet>中山南路/貴陽街口(西南側)</Snippet>
+    <description><![CDATA[國家圖書館<br>
+中山南路/貴陽街口(西南側)<br>
+National Central Library<br>
+]]></description>
+    <Point>
+      <coordinates>121.517029,25.037773,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>國興青年路口</name>
+    <Snippet>國興路/青年路(西南側)</Snippet>
+    <description><![CDATA[國興青年路口<br>
+國興路/青年路(西南側)<br>
+Guoxing & Qingnian Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.506538,25.025866,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>基隆長興路口</name>
+    <Snippet>基隆路/長興街(東南側)</Snippet>
+    <description><![CDATA[基隆長興路口<br>
+基隆路/長興街(東南側)<br>
+Keelung & Changxing Intersection<br>
+Intersection in Sec. 3]]></description>
+    <Point>
+      <coordinates>121.544350,25.017054,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>市民廣場</name>
+    <Snippet>市府路/松壽路(西北側) </Snippet>
+    <description><![CDATA[市民廣場<br>
+市府路/松壽路(西北側) <br>
+Citizen Square<br>
+]]></description>
+    <Point>
+      <coordinates>121.562325,25.036036,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>師範大學公館校區</name>
+    <Snippet>師大公館校區校門口(汀州路側)</Snippet>
+    <description><![CDATA[師範大學公館校區<br>
+師大公館校區校門口(汀州路側)<br>
+NTNU Gongguan Campus<br>
+]]></description>
+    <Point>
+      <coordinates>121.537186,25.007528,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>建國農安街口</name>
+    <Snippet>建國北路/農安街口(中油旁邊空地)</Snippet>
+    <description><![CDATA[建國農安街口<br>
+建國北路/農安街口(中油旁邊空地)<br>
+Jianguo & Nongan Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.536774,25.065031,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>建國長春路口</name>
+    <Snippet>建國北路/長春路口(北側)</Snippet>
+    <description><![CDATA[建國長春路口<br>
+建國北路/長春路口(北側)<br>
+Jianguo & Changchun Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.536926,25.054762,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運公館站(2號出口)</name>
+    <Snippet>羅斯福路四段/舟山路(東北側)</Snippet>
+    <description><![CDATA[捷運公館站(2號出口)<br>
+羅斯福路四段/舟山路(東北側)<br>
+MRT Gongguan Sta. (Exit 2)<br>
+]]></description>
+    <Point>
+      <coordinates>121.534538,25.014759,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運六張犁站</name>
+    <Snippet>捷運出口外和平東路側</Snippet>
+    <description><![CDATA[捷運六張犁站<br>
+捷運出口外和平東路側<br>
+MRT Liuzhangli Sta.<br>
+No.168]]></description>
+    <Point>
+      <coordinates>121.553162,25.023884,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運南港展覽館站(5號出口)</name>
+    <Snippet>研究院路/市民大道路口(西南側)</Snippet>
+    <description><![CDATA[捷運南港展覽館站(5號出口)<br>
+研究院路/市民大道路口(西南側)<br>
+MRT Nangang Exhibition Center Sta. (Exit 5)<br>
+]]></description>
+    <Point>
+      <coordinates>121.616692,25.054689,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運南港軟體園區站(2號出口)</name>
+    <Snippet>捷運南港軟體園區站2號出口外</Snippet>
+    <description><![CDATA[捷運南港軟體園區站(2號出口)<br>
+捷運南港軟體園區站2號出口外<br>
+MRT Nangang Software Park Sta. (Exit 2)<br>
+]]></description>
+    <Point>
+      <coordinates>121.616188,25.059731,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運善導寺站1號出口</name>
+    <Snippet>天津街/忠孝東路一段(東北側)</Snippet>
+    <description><![CDATA[捷運善導寺站1號出口<br>
+天津街/忠孝東路一段(東北側)<br>
+MRT Shandao Temple Sta. (Exit 1)<br>
+]]></description>
+    <Point>
+      <coordinates>121.522202,25.045267,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運國父紀念館站</name>
+    <Snippet>捷運國父紀念館站(3號出口) </Snippet>
+    <description><![CDATA[捷運國父紀念館站<br>
+捷運國父紀念館站(3號出口) <br>
+MRT S.Y.S Memorial Hall Sta.<br>
+]]></description>
+    <Point>
+      <coordinates>121.557800,25.041082,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運市政府站(3號出口)-1</name>
+    <Snippet>忠孝東路/松仁路(東南側)</Snippet>
+    <description><![CDATA[捷運市政府站(3號出口)-1<br>
+忠孝東路/松仁路(東南側)<br>
+MRT Taipei City Hall Sta. (Exit 3)-1<br>
+ ]]></description>
+    <Point>
+      <coordinates>121.568283,25.040670,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運市政府站(3號出口)-2</name>
+    <Snippet>忠孝東路/松仁路(東南側)</Snippet>
+    <description><![CDATA[捷運市政府站(3號出口)-2<br>
+忠孝東路/松仁路(東南側)<br>
+MRT Taipei City Hall Sta. (Exit 3)-2<br>
+]]></description>
+    <Point>
+      <coordinates>121.567902,25.040857,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運後山埤站(1號出口)</name>
+    <Snippet>中坡北路/忠孝東路五段(西北側)</Snippet>
+    <description><![CDATA[捷運後山埤站(1號出口)<br>
+中坡北路/忠孝東路五段(西北側)<br>
+MRT Houshanpi Sta. (Exit 1)<br>
+]]></description>
+    <Point>
+      <coordinates>121.581741,25.044310,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運忠孝新生(3號出口)</name>
+    <Snippet>捷運忠孝新生(3號出口)</Snippet>
+    <description><![CDATA[捷運忠孝新生(3號出口)<br>
+捷運忠孝新生(3號出口)<br>
+MRT Zhongxiao Xinsheng Sta. (Exit 3) (testing)<br>
+]]></description>
+    <Point>
+      <coordinates>121.533859,25.041924,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運昆陽站(1號出口)</name>
+    <Snippet>捷運昆陽站1號出口外停車場旁</Snippet>
+    <description><![CDATA[捷運昆陽站(1號出口)<br>
+捷運昆陽站1號出口外停車場旁<br>
+MRT Kunyang Sta. (Exit 1)<br>
+]]></description>
+    <Point>
+      <coordinates>121.592377,25.050142,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運東門站(4號出口)</name>
+    <Snippet>信義路/麗水街口</Snippet>
+    <description><![CDATA[捷運東門站(4號出口)<br>
+信義路/麗水街口<br>
+MRT Dongmen Sta. (Exit 4)<br>
+]]></description>
+    <Point>
+      <coordinates>121.529167,25.033701,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運科技大樓站</name>
+    <Snippet>科技大樓站對面(復興南路2段西側)</Snippet>
+    <description><![CDATA[捷運科技大樓站<br>
+科技大樓站對面(復興南路2段西側)<br>
+MRT Technology Bldg. Sta.<br>
+No.235]]></description>
+    <Point>
+      <coordinates>121.543297,25.025896,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運臺大醫院(4號出口)</name>
+    <Snippet>公園路/襄陽路(西南側)</Snippet>
+    <description><![CDATA[捷運臺大醫院(4號出口)<br>
+公園路/襄陽路(西南側)<br>
+MRT Nat’l Taiwan U. Hospital Sta. (Exit 4)<br>
+]]></description>
+    <Point>
+      <coordinates>121.516426,25.042973,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運行天宮站(1號出口)</name>
+    <Snippet>捷運行天宮1號出口後方(松江路側)</Snippet>
+    <description><![CDATA[捷運行天宮站(1號出口)<br>
+捷運行天宮1號出口後方(松江路側)<br>
+MRT Xingtian Temple Sta. (Exit 1)<br>
+]]></description>
+    <Point>
+      <coordinates>121.532936,25.058369,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>捷運行天宮站(3號出口)</name>
+    <Snippet>捷運行天宮站3號出口站外</Snippet>
+    <description><![CDATA[捷運行天宮站(3號出口)<br>
+捷運行天宮站3號出口站外<br>
+MRT Xingtian Temple Sta. (Exit 3)<br>
+]]></description>
+    <Point>
+      <coordinates>121.533302,25.059978,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>新生和平路口</name>
+    <Snippet>新生南路二段/和平東路二段(東北側)</Snippet>
+    <description><![CDATA[新生和平路口<br>
+新生南路二段/和平東路二段(東北側)<br>
+Xinsheng & Heping Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.535187,25.026217,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>東新國小</name>
+    <Snippet>東新國小側門(東明街62號前)</Snippet>
+    <description><![CDATA[東新國小<br>
+東新國小側門(東明街62號前)<br>
+Dongxin Elementary School<br>
+]]></description>
+    <Point>
+      <coordinates>121.602798,25.055075,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>松山家商</name>
+    <Snippet>林口街/福德街(南東側)</Snippet>
+    <description><![CDATA[松山家商<br>
+林口街/福德街(南東側)<br>
+Songshan Vocational High School<br>
+]]></description>
+    <Point>
+      <coordinates>121.579132,25.036083,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>松山車站</name>
+    <Snippet>松山車站西出口外自行車格內</Snippet>
+    <description><![CDATA[松山車站<br>
+松山車站西出口外自行車格內<br>
+Songshan Rail Sta.<br>
+]]></description>
+    <Point>
+      <coordinates>121.578094,25.048616,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>松德站</name>
+    <Snippet>台北市信義區松德路300號</Snippet>
+    <description><![CDATA[松德站<br>
+台北市信義區松德路300號<br>
+Songde<br>
+]]></description>
+    <Point>
+      <coordinates>121.574356,25.031590,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>林森公園</name>
+    <Snippet>林森北路/南京東路一段</Snippet>
+    <description><![CDATA[林森公園<br>
+林森北路/南京東路一段<br>
+Linsen Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.525803,25.052227,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>榮星花園</name>
+    <Snippet>五常街/龍江路口(西南側)</Snippet>
+    <description><![CDATA[榮星花園<br>
+五常街/龍江路口(西南側)<br>
+Rongxing Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.540367,25.064240,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>民權運動公園</name>
+    <Snippet>民權東路四段/新中街交叉口</Snippet>
+    <description><![CDATA[民權運動公園<br>
+民權東路四段/新中街交叉口<br>
+MinQuan Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.560188,25.062002,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>民生光復路口</name>
+    <Snippet>光復北路/民生東路(西北側)</Snippet>
+    <description><![CDATA[民生光復路口<br>
+光復北路/民生東路(西北側)<br>
+Minsheng & Guangfu Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.555038,25.058399,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>民生敦化路口</name>
+    <Snippet>敦化民生路口公車站旁</Snippet>
+    <description><![CDATA[民生敦化路口<br>
+敦化民生路口公車站旁<br>
+Minsheng & Dunhua Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.548981,25.057985,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>永吉松信路口</name>
+    <Snippet>松信路/永吉路南西側人行道</Snippet>
+    <description><![CDATA[永吉松信路口<br>
+松信路/永吉路南西側人行道<br>
+Yongji & Songxin Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.572052,25.045429,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>玉成公園</name>
+    <Snippet>玉成街247號前</Snippet>
+    <description><![CDATA[玉成公園<br>
+玉成街247號前<br>
+Yucheng Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.586403,25.042870,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>社教館</name>
+    <Snippet>八德路三段25號前</Snippet>
+    <description><![CDATA[社教館<br>
+八德路三段25號前<br>
+Taipei Cultural Center<br>
+]]></description>
+    <Point>
+      <coordinates>121.552277,25.048267,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>福德公園</name>
+    <Snippet>大道路/福德街路口北西側</Snippet>
+    <description><![CDATA[福德公園<br>
+大道路/福德街路口北西側<br>
+Fude Park<br>
+]]></description>
+    <Point>
+      <coordinates>121.583672,25.038090,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>臺北市立圖書館(總館)</name>
+    <Snippet>建國南路二段/建國南路二段151巷(東北側)</Snippet>
+    <description><![CDATA[臺北市立圖書館(總館)<br>
+建國南路二段/建國南路二段151巷(東北側)<br>
+Taipei Public Library<br>
+]]></description>
+    <Point>
+      <coordinates>121.538071,25.028797,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>臺北田徑場</name>
+    <Snippet>敦化北路3號</Snippet>
+    <description><![CDATA[臺北田徑場<br>
+敦化北路3號<br>
+Taipei Stadium<br>
+]]></description>
+    <Point>
+      <coordinates>121.549408,25.049505,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>臺北醫學大學</name>
+    <Snippet>台北醫學大學(吳興街220巷59弄)</Snippet>
+    <description><![CDATA[臺北醫學大學<br>
+台北醫學大學(吳興街220巷59弄)<br>
+Taipei Medical University<br>
+]]></description>
+    <Point>
+      <coordinates>121.561745,25.026678,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>臺大資訊大樓</name>
+    <Snippet>辛亥路二段(臺大外語學院外)</Snippet>
+    <description><![CDATA[臺大資訊大樓<br>
+辛亥路二段(臺大外語學院外)<br>
+NTU Information Bldg.<br>
+]]></description>
+    <Point>
+      <coordinates>121.541527,25.021009,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>臺灣師範大學(圖書館)</name>
+    <Snippet>和平東路/師大路口(北側)</Snippet>
+    <description><![CDATA[臺灣師範大學(圖書館)<br>
+和平東路/師大路口(北側)<br>
+NTNU Library<br>
+]]></description>
+    <Point>
+      <coordinates>121.528893,25.026649,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>興雅國中</name>
+    <Snippet>松仁路/松仁路95巷(東南側) </Snippet>
+    <description><![CDATA[興雅國中<br>
+松仁路/松仁路95巷(東南側) <br>
+Xingya Jr. High School<br>
+]]></description>
+    <Point>
+      <coordinates>121.568665,25.036564,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>辛亥新生路口</name>
+    <Snippet>辛亥路/新生南路(高架橋下)</Snippet>
+    <description><![CDATA[辛亥新生路口<br>
+辛亥路/新生南路(高架橋下)<br>
+Xinhai & Xinsheng Intersection<br>
+]]></description>
+    <Point>
+      <coordinates>121.534561,25.022413,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>金山愛國路口</name>
+    <Snippet>愛國東路/金山南路(西南側)</Snippet>
+    <description><![CDATA[金山愛國路口<br>
+愛國東路/金山南路(西南側)<br>
+Jinshan & Aiguo Intersection<br>
+Intersection in Sec. 2]]></description>
+    <Point>
+      <coordinates>121.526550,25.031639,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>青年公園3號出口</name>
+    <Snippet>青年路/青年路106巷(東側)</Snippet>
+    <description><![CDATA[青年公園3號出口<br>
+青年路/青年路106巷(東側)<br>
+Youth Park Exit 3<br>
+]]></description>
+    <Point>
+      <coordinates>121.502708,25.022724,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>饒河夜市</name>
+    <Snippet>八德路/松信路(西南側)</Snippet>
+    <description><![CDATA[饒河夜市<br>
+八德路/松信路(西南側)<br>
+Raohe Night Market<br>
+]]></description>
+    <Point>
+      <coordinates>121.571884,25.049845,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>龍門廣場</name>
+    <Snippet>忠孝東路/敦化南路(西南側廣場）</Snippet>
+    <description><![CDATA[龍門廣場<br>
+忠孝東路/敦化南路(西南側廣場）<br>
+Longmen Square(Testing)<br>
+]]></description>
+    <Point>
+      <coordinates>121.548248,25.040901,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
