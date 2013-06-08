@@ -2,6 +2,7 @@ youbike-stations
 ================
 
 Generate Youbike station Google map usable on Android from the Youbike web site map.
+Example: https://www.google.com/maps/ms?msa=0&msid=217046930935496807564.0004cc92264e828cd5826
 
 genxml.sh
 ---------
