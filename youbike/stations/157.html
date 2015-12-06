@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1009 三重國民運動中心 - San chong Civil Sports Center</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.054391,121.488489);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"San chong Civil Sports Center : 32 bikes; 36 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: San chong Civil Sports Center (Station No: 1009) <a href="">中文</a></p>
+<p>Bikes: 32 available, 36 spaces, 68 total</p>
+<p>Area: Sanchong Dist.</p>
+<p>Address: Jimei St., Sanchong Dist./Ln. 184, Sec. 4, Chongxin Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

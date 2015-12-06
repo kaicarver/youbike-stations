@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1174 土城綜合體育場 - Tucheng Sports Field</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.983671,121.454211);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Tucheng Sports Field : 12 bikes; 32 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Tucheng Sports Field (Station No: 1174) <a href="">中文</a></p>
+<p>Bikes: 12 available, 32 spaces, 44 total</p>
+<p>Area: Tucheng Dist.</p>
+<p>Address: Ln. 195, Yumin Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

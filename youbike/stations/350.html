@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1208 尖山公園 - Jianshan Park</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.94822,121.345767);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Jianshan Park : 14 bikes; 30 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Jianshan Park (Station No: 1208) <a href="">中文</a></p>
+<p>Bikes: 14 available, 30 spaces, 44 total</p>
+<p>Area: Yingge Dist.</p>
+<p>Address: No.161, Jianshan Rd.(opposite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

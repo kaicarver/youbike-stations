@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1093 建國民權路口 - Jianguo Minquan Intersection</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.983184,121.537462);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Jianguo Minquan Intersection : 10 bikes; 36 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Jianguo Minquan Intersection (Station No: 1093) <a href="">中文</a></p>
+<p>Bikes: 10 available, 36 spaces, 46 total</p>
+<p>Area: 新店區</p>
+<p>Address: No.259, Jianguo Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

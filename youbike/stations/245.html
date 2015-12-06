@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 142 捷運木柵站 - MRT Muzha Sta.</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.997747,121.574214);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Muzha Sta. : 10 bikes; 42 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Muzha Sta. (Station No: 142) <a href="">中文</a></p>
+<p>Bikes: 10 available, 42 spaces, 52 total</p>
+<p>Area: Wenshan Dist.</p>
+<p>Address: No.18, Ln. 82, Sec. 4, Muzha Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

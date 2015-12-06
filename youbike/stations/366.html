@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1073 永福橋 - Yongfu Bridge</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.010032,121.524184);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Yongfu Bridge : 0 bikes; 50 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Yongfu Bridge (Station No: 1073) <a href="">中文</a></p>
+<p>Bikes: 0 available, 50 spaces, 50 total</p>
+<p>Area: Yonghe Dist.</p>
+<p>Address: No.27, Ln. 217, Yuxi St. (opposite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

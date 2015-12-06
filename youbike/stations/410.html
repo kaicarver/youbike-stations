@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 82 捷運西門站(3號出口) - MRT Ximen Sta.(Exit 3)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.041778,121.508693);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Ximen Sta.(Exit 3) : 5 bikes; 55 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Ximen Sta.(Exit 3) (Station No: 82) <a href="">中文</a></p>
+<p>Bikes: 5 available, 55 spaces, 60 total</p>
+<p>Area: Zhongzheng Dist.</p>
+<p>Address: The S.E. side of Sec. 1, Zhonghua Rd. & Baoqing Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

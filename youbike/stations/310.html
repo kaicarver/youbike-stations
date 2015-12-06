@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1199 捷運迴龍站(3號出口) - MRT Huilong Sta.(Exit 3)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.02276,121.413053);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Huilong Sta.(Exit 3) : 15 bikes; 45 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Huilong Sta.(Exit 3) (Station No: 1199) <a href="">中文</a></p>
+<p>Bikes: 15 available, 45 spaces, 60 total</p>
+<p>Area: Xinzhuang Dist.</p>
+<p>Address: Zhongzheng Rd./Ln. 746, Zhongzheng Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

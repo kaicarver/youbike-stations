@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 119 捷運劍南路站(2號出口) - MRT Jiannan Rd. Sta.(Exit 2)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.08418,121.555116);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Jiannan Rd. Sta.(Exit 2) : 12 bikes; 44 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Jiannan Rd. Sta.(Exit 2) (Station No: 119) <a href="">中文</a></p>
+<p>Bikes: 12 available, 44 spaces, 56 total</p>
+<p>Area: Zhongshan Dist.</p>
+<p>Address: Jingye 2nd Rd. & Zhifu Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

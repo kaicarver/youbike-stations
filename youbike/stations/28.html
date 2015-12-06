@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1104 聯合醫院板橋院區 - New Taipei City Hospital Banqiao Branch</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.023832,121.457773);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"New Taipei City Hospital Banqiao Branch : 9 bikes; 25 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: New Taipei City Hospital Banqiao Branch (Station No: 1104) <a href="">中文</a></p>
+<p>Bikes: 9 available, 25 spaces, 34 total</p>
+<p>Area: Banqiao Dist.</p>
+<p>Address: No.131, Longquan St.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

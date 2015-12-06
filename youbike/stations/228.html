@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1216 捷運永寧站(2號出口) - MRT Yungning Sta.(EXIT 2)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.965783,121.436227);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Yungning Sta.(EXIT 2) : 19 bikes; 25 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Yungning Sta.(EXIT 2) (Station No: 1216) <a href="">中文</a></p>
+<p>Bikes: 19 available, 25 spaces, 44 total</p>
+<p>Area: Tucheng Dist.</p>
+<p>Address: No.11, Chengtian Rd.(oppsite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1159 新樹公園 - Xinshu Park</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.003383,121.433154);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Xinshu Park : 8 bikes; 24 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Xinshu Park (Station No: 1159) <a href="">中文</a></p>
+<p>Bikes: 8 available, 24 spaces, 32 total</p>
+<p>Area: Xinzhuang Dist.</p>
+<p>Address: No.627, Xinshu Rd. (opposite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

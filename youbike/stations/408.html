@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 58 捷運善導寺站(1號出口) - MRT Shandao Temple Sta(Exit 1)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.045267,121.5222);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Shandao Temple Sta(Exit 1) : 18 bikes; 30 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Shandao Temple Sta(Exit 1) (Station No: 58) <a href="">中文</a></p>
+<p>Bikes: 18 available, 30 spaces, 48 total</p>
+<p>Area: Zhongzheng Dist.</p>
+<p>Address: The N.E. side of Tianjin St. & Sec. 1, Zhongxiao E. Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

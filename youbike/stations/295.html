@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 5 興雅國中 - Xingya Jr. High School</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.0365638889,121.5686639);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Xingya Jr. High School : 25 bikes; 35 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Xingya Jr. High School (Station No: 5) <a href="">中文</a></p>
+<p>Bikes: 25 available, 35 spaces, 60 total</p>
+<p>Area: Xinyi Dist.</p>
+<p>Address: </p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

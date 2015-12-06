@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 19 中強公園 - Zhongqiang Park</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.02863,121.56981);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Zhongqiang Park : 5 bikes; 25 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Zhongqiang Park (Station No: 19) <a href="">中文</a></p>
+<p>Bikes: 5 available, 25 spaces, 30 total</p>
+<p>Area: Xinyi Dist.</p>
+<p>Address: No.17, Ln. 153, Songren Rd</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

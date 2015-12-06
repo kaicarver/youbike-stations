@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.073306,121.515843
+);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Taipei Confucius Temple : 2 bikes; 30 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Taipei Confucius Temple (Station No: 108) <a href="../89cht.html">中文</a></p>
+<p>Bikes: 2 available, 30 spaces, 32 total</p>
+<p>Area: Taipei // Datong Dist.</p>
+<p>Address: The N.E. side of Ln. 59, Hami St. & Hami St.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

@@ -33,6 +33,7 @@ print <<END;
 The official map is a little hard to use. This one makes it easy to get directions to any station.]]></description>
 END
 
+my @field_names_clear = qw/Number	Name	Total	Available	Area	Latitude	Longitude	Address	AreaEn	NameEn	AddressEn/;
 my @field_names = qw/sno sna tot sbi sarea lat lng ar sareaen snaen aren/;
 for my $station (@stations) {
   my @fields = 

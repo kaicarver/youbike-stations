@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1126 柳堤公園 - Liuti Park</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.087989,121.462192);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Liuti Park : 9 bikes; 33 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Liuti Park (Station No: 1126) <a href="">中文</a></p>
+<p>Bikes: 9 available, 33 spaces, 42 total</p>
+<p>Area: Luzhou Dist.</p>
+<p>Address: No.125, Changle Rd. (opposite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

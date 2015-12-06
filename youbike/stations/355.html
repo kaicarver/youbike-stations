@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1201 鶯歌火車站(仁愛路) - Yingge Railway Station(Ren’ai  Rd.)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.955591,121.354376);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Yingge Railway Station(Ren’ai  Rd.) : 13 bikes; 45 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Yingge Railway Station(Ren’ai  Rd.) (Station No: 1201) <a href="">中文</a></p>
+<p>Bikes: 13 available, 45 spaces, 58 total</p>
+<p>Area: Yingge Dist.</p>
+<p>Address: No.55, Ren’ai Rd., Yingge Dist.(opposite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

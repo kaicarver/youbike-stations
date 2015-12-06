@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1117 捷運府中站(3號出口) - MRT Fuzhong Sta.(Exit.3)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.008999,121.458776);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Fuzhong Sta.(Exit.3) : 12 bikes; 30 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Fuzhong Sta.(Exit.3) (Station No: 1117) <a href="">中文</a></p>
+<p>Bikes: 12 available, 30 spaces, 42 total</p>
+<p>Area: Banqiao Dist.</p>
+<p>Address: </p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

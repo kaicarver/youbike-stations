@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 132 羅斯福新生南路口 - Roosevelt & Xinsheng S. Intersection</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.01603085,121.5331757);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Roosevelt & Xinsheng S. Intersection : 16 bikes; 72 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Roosevelt & Xinsheng S. Intersection (Station No: 132) <a href="">中文</a></p>
+<p>Bikes: 16 available, 72 spaces, 88 total</p>
+<p>Area: Daan Dist.</p>
+<p>Address: Sec. 4, Roosevelt Rd./Sec. 3, Xinsheng S. Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

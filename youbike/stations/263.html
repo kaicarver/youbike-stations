@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1036 小金門友誼公園 - Little Kinmen Park</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.977227,121.53814);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Little Kinmen Park : 5 bikes; 55 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Little Kinmen Park (Station No: 1036) <a href="">中文</a></p>
+<p>Bikes: 5 available, 55 spaces, 60 total</p>
+<p>Area: Xindian Dist.</p>
+<p>Address: Jianxing St.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

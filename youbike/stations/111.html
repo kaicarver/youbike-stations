@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 26 捷運昆陽站(1號出口) - MRT Kunyang Sta. (Exit 1)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.050142,121.592375);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Kunyang Sta. (Exit 1) : 29 bikes; 13 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Kunyang Sta. (Exit 1) (Station No: 26) <a href="">中文</a></p>
+<p>Bikes: 29 available, 13 spaces, 42 total</p>
+<p>Area: Nangang Dist.</p>
+<p>Address: The side of parking lots in the MRT Kunyang station (exit 1)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

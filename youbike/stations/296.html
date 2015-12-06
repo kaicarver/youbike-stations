@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 7 信義廣場(台北101) - Xinyi Square(Taipei 101)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.0330388889,121.565619444);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Xinyi Square(Taipei 101) : 59 bikes; 21 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Xinyi Square(Taipei 101) (Station No: 7) <a href="">中文</a></p>
+<p>Bikes: 59 available, 21 spaces, 80 total</p>
+<p>Area: Xinyi Dist.</p>
+<p>Address: The N.E. side of Road Song Zhi & Road Xinyi.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1225 先嗇宮 - Xianse Temple</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.05119,121.476007);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Xianse Temple : 16 bikes; 24 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Xianse Temple (Station No: 1225) <a href="">中文</a></p>
+<p>Bikes: 16 available, 24 spaces, 40 total</p>
+<p>Area: Sanchong Dist.</p>
+<p>Address: No.77, Wuguwang N. St.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

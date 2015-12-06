@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 146 捷運士林站(2號出口) - MRT Shilin Sta.(Exit 2)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.092546,121.526556);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Shilin Sta.(Exit 2) : 9 bikes; 37 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Shilin Sta.(Exit 2) (Station No: 146) <a href="">中文</a></p>
+<p>Bikes: 9 available, 37 spaces, 46 total</p>
+<p>Area: Shilin Dist.</p>
+<p>Address: Ln. 247, Zhongzheng Rd. / Ln. 505, Sec. 5, Zhongshan N. Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

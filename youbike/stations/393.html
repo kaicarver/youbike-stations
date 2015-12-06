@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 34 捷運行天宮站(1號出口) - MRT Xingtian Temple Sta. (Exit 1)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.058369,121.532934);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Xingtian Temple Sta. (Exit 1) : 7 bikes; 25 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Xingtian Temple Sta. (Exit 1) (Station No: 34) <a href="">中文</a></p>
+<p>Bikes: 7 available, 25 spaces, 32 total</p>
+<p>Area: Zhongshan Dist.</p>
+<p>Address: The side of Songjiang Rd.(the exit 1 of the MRT station of Xingtian Temple)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

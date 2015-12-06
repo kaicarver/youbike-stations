@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 48 南港車站 - Nangang Rail Sta.</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.05247,121.608202);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Nangang Rail Sta. : 21 bikes; 17 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Nangang Rail Sta. (Station No: 48) <a href="">中文</a></p>
+<p>Bikes: 21 available, 17 spaces, 38 total</p>
+<p>Area: Nangang Dist.</p>
+<p>Address: The intersection of Sec. 7, Zhongxiao E. Rd. & Ln. 415, Sec. 7, Zhongxiao E. Rd</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

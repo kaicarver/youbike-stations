@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 4 市民廣場 - Citizen Square</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.0360361111,121.562325);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Citizen Square : 45 bikes; 15 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Citizen Square (Station No: 4) <a href="">中文</a></p>
+<p>Bikes: 45 available, 15 spaces, 60 total</p>
+<p>Area: Xinyi Dist.</p>
+<p>Address: The N.W. side of Road Shifu & Road Song Shou.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

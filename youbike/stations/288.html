@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 16 松山家商 - Songshan Vocational High School</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.036084,121.579135);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Songshan Vocational High School : 13 bikes; 35 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Songshan Vocational High School (Station No: 16) <a href="">中文</a></p>
+<p>Bikes: 13 available, 35 spaces, 48 total</p>
+<p>Area: Xinyi Dist.</p>
+<p>Address: The S.E. side of St. Linkou & St. Fude.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

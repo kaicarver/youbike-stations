@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 3 台北市政府 - Taipei City Hall</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.0377972222,121.565169444);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Taipei City Hall : 23 bikes; 17 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Taipei City Hall (Station No: 3) <a href="">中文</a></p>
+<p>Bikes: 23 available, 17 spaces, 40 total</p>
+<p>Area: Xinyi Dist.</p>
+<p>Address: Taipei City Government Eastgate (Song Zhi Road)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

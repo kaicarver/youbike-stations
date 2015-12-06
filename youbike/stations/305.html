@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1015 後港公園 - Hougang Park</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.025358,121.428348);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Hougang Park : 17 bikes; 23 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Hougang Park (Station No: 1015) <a href="">中文</a></p>
+<p>Bikes: 17 available, 23 spaces, 40 total</p>
+<p>Area: Xinzhuang Dist.</p>
+<p>Address: Ln. 57, Jian’an St./Jian’an St.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

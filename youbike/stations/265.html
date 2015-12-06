@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1101 捷運七張站(1號出口) - MRT Qizhang Sta. (Exit 1)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.974996,121.542767);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Qizhang Sta. (Exit 1) : 9 bikes; 33 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Qizhang Sta. (Exit 1) (Station No: 1101) <a href="">中文</a></p>
+<p>Bikes: 9 available, 33 spaces, 42 total</p>
+<p>Area: Xindian Dist.</p>
+<p>Address: Sec. 2, Beixin Rd./Ln. 121, Sec. 2, Beixin Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

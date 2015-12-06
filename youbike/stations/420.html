@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 195 信義杭州路口(中華電信總公司) - Xinyi Hangzhou Intersection(Chunghwa Telecom)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.035851,121.523987);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Xinyi Hangzhou Intersection(Chunghwa Telecom) : 5 bikes; 45 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Xinyi Hangzhou Intersection(Chunghwa Telecom) (Station No: 195) <a href="">中文</a></p>
+<p>Bikes: 5 available, 45 spaces, 50 total</p>
+<p>Area: Zhongzheng Dist.</p>
+<p>Address: Sec. 1, Xinyi Rd./Sec. 1, Hangzhou S. Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

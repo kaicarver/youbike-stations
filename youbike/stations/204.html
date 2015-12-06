@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 22 松山車站 - Songshan Rail Sta.</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.048616,121.578095);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"Songshan Rail Sta. : 1 bikes; 43 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: Songshan Rail Sta. (Station No: 22) <a href="">中文</a></p>
+<p>Bikes: 1 available, 43 spaces, 44 total</p>
+<p>Area: Songshan Dist.</p>
+<p>Address: Bicycle parking lot- West exit in Songshan station</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

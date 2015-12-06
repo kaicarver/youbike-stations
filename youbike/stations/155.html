@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1070 新北市立圖書館三重分館 - New Taipei City Library Sanchong Branch</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.066099,121.495529);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"New Taipei City Library Sanchong Branch : 31 bikes; 19 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: New Taipei City Library Sanchong Branch (Station No: 1070) <a href="">中文</a></p>
+<p>Bikes: 31 available, 19 spaces, 50 total</p>
+<p>Area: Sanchong Dist.</p>
+<p>Address: No.162, Sec. 1, Ziqiang Rd. to No.4, Aly. 2, Sec. 1, Ziqiang Rd. (opposite)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

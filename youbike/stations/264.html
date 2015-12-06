@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 1006 捷運大坪林站 - MRT Dapinglin Sta.</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(24.983977,121.541721);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Dapinglin Sta. : 9 bikes; 23 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Dapinglin Sta. (Station No: 1006) <a href="">中文</a></p>
+<p>Bikes: 9 available, 23 spaces, 32 total</p>
+<p>Area: Xindian Dist.</p>
+<p>Address: Bao''an St./Ln. 58,Bao''an St</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>

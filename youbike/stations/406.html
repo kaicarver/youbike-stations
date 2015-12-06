@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youbike station 182 捷運古亭站(2號出口) - MRT Guting Sta. (Exit 2)</title>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.0253,121.523537);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:"MRT Guting Sta. (Exit 2) : 14 bikes; 36 spaces"
+  });
+
+infowindow.open(map,marker);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike Station Name: MRT Guting Sta. (Exit 2) (Station No: 182) <a href="">中文</a></p>
+<p>Bikes: 14 available, 36 spaces, 50 total</p>
+<p>Area: Zhongzheng Dist.</p>
+<p>Address: Sec. 2, Roosevelt Rd./Ln. 174, Sec. 2, Roosevelt Rd.</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>
