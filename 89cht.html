@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(25.073306,121.515843
+);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"臺北孔廟 - 尚有: 2 輛; 空位: 30 "
+  });
+
+infowindow.open(map,marker);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<p>Youbike 站名: 臺北孔廟 (站號: 108) <a href="../89en.html">English</a></p>
+<p>尚有: 2 輛, 空位: 30 輛, 共有: 32 輛</p>
+<p>區域: 台北市大同區</p>
+<p>地址: 哈密街59巷/哈密街(東北側)</p>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+</body>
+</html>
