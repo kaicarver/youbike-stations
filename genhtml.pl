@@ -67,6 +67,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <p>$available bicycles, $spaces spaces (on $date)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
+
+<p><a href="index.html">All Youbike stations</a></p>
 </body>
 </html>
 END
