@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 1112 碧華公園 - Bihua Park</title>
+<title>碧華公園 - Bihua Park : Youbike Station 1112</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Bihua Park : 14 bikes; 14 spaces"
+  content:"14 bikes; 14 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Bihua Park (Station No: 1112) <a href="">中文</a></p>
-<p>Bikes: 14 available, 14 spaces, 28 total</p>
-<p>Area: Sanchong Dist.</p>
-<p>Address: No.303, Xiwei St. (opposite)</p>
+<p>Youbike station 1112 : 碧華公園 / Bihua Park
+<p>三重區 - 溪尾街303號(對面公園) / No.303, Xiwei St. (opposite) - Sanchong Dist.</p>
+<p>14 bicycles, 14 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

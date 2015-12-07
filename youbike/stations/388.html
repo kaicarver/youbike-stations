@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 59 林森公園 - Linsen Park</title>
+<title>林森公園 - Linsen Park : Youbike Station 59</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Linsen Park : 2 bikes; 30 spaces"
+  content:"2 bikes; 30 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Linsen Park (Station No: 59) <a href="">中文</a></p>
-<p>Bikes: 2 available, 30 spaces, 32 total</p>
-<p>Area: Zhongshan Dist.</p>
-<p>Address: Linsen N. Rd. & Sec. 1, Nanjing E. Rd.</p>
+<p>Youbike station 59 : 林森公園 / Linsen Park
+<p>中山區 - 林森北路/南京東路一段 / Linsen N. Rd. & Sec. 1, Nanjing E. Rd. - Zhongshan Dist.</p>
+<p>2 bicycles, 30 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

@@ -5,6 +5,9 @@
 my @values = ();
 my $i = 1;
 my $seq = shift;
+my $date = shift;
+#$date = localtime;
+
 #print "seq=$seq\n";
 
 <>;
@@ -23,7 +26,7 @@ while (<>) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station $label $name - $name_en</title>
+<title>$name - $name_en : Youbike Station $label</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -47,7 +50,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"$name_en : $available bikes; $spaces spaces"
+  content:"$available bikes; $spaces spaces <br>(on $date)"
   });
 
 infowindow.open(map,marker);
@@ -59,10 +62,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: $name_en (Station No: $label) <a href="">中文</a></p>
-<p>Bikes: $available available, $spaces spaces, $total total</p>
-<p>Area: $area_en</p>
-<p>Address: $address_en</p>
+<p>Youbike station $label : $name / $name_en
+<p>$area - $address / $address_en - $area_en</p>
+<p>$available bicycles, $spaces spaces (on $date)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

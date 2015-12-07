@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 124 振華公園 - Zenhua Park</title>
+<title>振華公園 - Zenhua Park : Youbike Station 124</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Zenhua Park : 16 bikes; 20 spaces"
+  content:"16 bikes; 20 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Zenhua Park (Station No: 124) <a href="">中文</a></p>
-<p>Bikes: 16 available, 20 spaces, 36 total</p>
-<p>Area: Beitou Dist.</p>
-<p>Address: No.36, Zhenhua St.</p>
+<p>Youbike station 124 : 振華公園 / Zenhua Park
+<p>北投區 - 振華街36號對面 / No.36, Zhenhua St. - Beitou Dist.</p>
+<p>16 bicycles, 20 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

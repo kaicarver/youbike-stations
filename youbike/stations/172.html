@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 116 福林公園 - Fulin Park</title>
+<title>福林公園 - Fulin Park : Youbike Station 116</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Fulin Park : 32 bikes; 12 spaces"
+  content:"32 bikes; 12 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Fulin Park (Station No: 116) <a href="">中文</a></p>
-<p>Bikes: 32 available, 12 spaces, 44 total</p>
-<p>Area: Shilin Dist.</p>
-<p>Address: Zhicheng St. & Zhongzheng Rd.</p>
+<p>Youbike station 116 : 福林公園 / Fulin Park
+<p>士林區 - 志成街/中正路(南側) / Zhicheng St. & Zhongzheng Rd. - Shilin Dist.</p>
+<p>32 bicycles, 12 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

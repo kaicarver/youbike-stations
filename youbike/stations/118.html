@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 40 玉成公園 - Yucheng Park</title>
+<title>玉成公園 - Yucheng Park : Youbike Station 40</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Yucheng Park : 16 bikes; 18 spaces"
+  content:"16 bikes; 18 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Yucheng Park (Station No: 40) <a href="">中文</a></p>
-<p>Bikes: 16 available, 18 spaces, 34 total</p>
-<p>Area: Nangang Dist.</p>
-<p>Address: The front of No. 247, Yucheng St.</p>
+<p>Youbike station 40 : 玉成公園 / Yucheng Park
+<p>南港區 - 玉成街247號前 / The front of No. 247, Yucheng St. - Nangang Dist.</p>
+<p>16 bicycles, 18 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

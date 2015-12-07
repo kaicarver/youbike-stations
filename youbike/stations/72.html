@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 36 臺大資訊大樓 - NTU Information Bldg.</title>
+<title>臺大資訊大樓 - NTU Information Bldg. : Youbike Station 36</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"NTU Information Bldg. : 24 bikes; 48 spaces"
+  content:"24 bikes; 48 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: NTU Information Bldg. (Station No: 36) <a href="">中文</a></p>
-<p>Bikes: 24 available, 48 spaces, 72 total</p>
-<p>Area: Daan Dist.</p>
-<p>Address: Sec. 2, Xinghai Rd. (the outside ofLanguage Center of National Taiwan University)</p>
+<p>Youbike station 36 : 臺大資訊大樓 / NTU Information Bldg.
+<p>大安區 - 辛亥路二段(臺大外語學院外) / Sec. 2, Xinghai Rd. (the outside ofLanguage Center of National Taiwan University) - Daan Dist.</p>
+<p>24 bicycles, 48 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

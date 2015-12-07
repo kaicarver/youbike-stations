@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 1034 中原公園 - Zhung Yuan Park</title>
+<title>中原公園 - Zhung Yuan Park : Youbike Station 1034</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Zhung Yuan Park : 20 bikes; 38 spaces"
+  content:"20 bikes; 38 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Zhung Yuan Park (Station No: 1034) <a href="">中文</a></p>
-<p>Bikes: 20 available, 38 spaces, 58 total</p>
-<p>Area: Luzhou Dist.</p>
-<p>Address: No.22, Changxing Rd.</p>
+<p>Youbike station 1034 : 中原公園 / Zhung Yuan Park
+<p>蘆洲區 - 長興路22號前通道 / No.22, Changxing Rd. - Luzhou Dist.</p>
+<p>20 bicycles, 38 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>

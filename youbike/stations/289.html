@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Youbike station 3 台北市政府 - Taipei City Hall</title>
+<title>台北市政府 - Taipei City Hall : Youbike Station 3</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -25,7 +25,7 @@ var marker=new google.maps.Marker({
 
 marker.setMap(map);
 var infowindow = new google.maps.InfoWindow({
-  content:"Taipei City Hall : 23 bikes; 17 spaces"
+  content:"23 bikes; 17 spaces <br>(on Sunday Dec 6, 2015 at 13:33)"
   });
 
 infowindow.open(map,marker);
@@ -37,10 +37,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<p>Youbike Station Name: Taipei City Hall (Station No: 3) <a href="">中文</a></p>
-<p>Bikes: 23 available, 17 spaces, 40 total</p>
-<p>Area: Xinyi Dist.</p>
-<p>Address: Taipei City Government Eastgate (Song Zhi Road)</p>
+<p>Youbike station 3 : 台北市政府 / Taipei City Hall
+<p>信義區 - 台北市政府東門(松智路) / Taipei City Government Eastgate (Song Zhi Road) - Xinyi Dist.</p>
+<p>23 bicycles, 17 spaces (on Sunday Dec 6, 2015 at 13:33)</p>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>
