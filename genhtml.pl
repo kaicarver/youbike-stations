@@ -1,6 +1,6 @@
-# Generate SQL for loading up all the stations
+# Generate HTML for one Youbike station from the file with all stations
 
-# usage: perl gensql.pl Youbike.csv
+# usage: perl genhtml.pl station_number date Youbike.csv
 
 my @values = ();
 my $i = 1;

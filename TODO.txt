@@ -1,0 +1,14 @@
+TODO:
+
+- put whole process in one script
+
+  1. get URL from the web into Youbike.txt
+  2. transform the file into Youbike.csv
+  3. call HTML generation
+
+- work on the dynamic SQL update
+  1. get the data
+  2. figure out how to do the updates
+    . update availabilities
+    . add/remove any new stations
+    . add any new areas

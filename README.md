@@ -20,7 +20,9 @@ The data is transformed into a KML file, which can be imported into Google Maps
 Latest station info
 -------------------
 
-* quasi-CSV format (lines split by '|', fields by '_'
+* quasi-CSV format (lines split by '|', fields by '_')
+
+  http://its.taipei.gov.tw/atis_index/aspx/Youbike.aspx?Mode=1
 
 This is the best information I have found, but it may be a bit unofficial.
 I forget where I found it, but it is referenced in various places.
@@ -29,8 +31,6 @@ It may be what the youbike web site uses for its map.
 This URL lists all stations in Taipei and New Taipei City
 It includes availability of bicycles and spaces.
 The information is refreshed frequently (every 5 minutes?)
-
-  http://its.taipei.gov.tw/atis_index/aspx/Youbike.aspx?Mode=1
 
 Perl one-liner to turn the data into a CSV file with semi-colon separators:
 
