@@ -22,10 +22,25 @@ Latest station info
 
 * UPDATE: the latest on latest station info is... I still can't quite believe it:
 
-The data for all 791 stations on the island (6 cities) is embedded in the main PHP-delivered HTML map files (one for each language).
+The data for all 791 stations* on the island (6 cities) is embedded in the main PHP-delivered HTML map files (one for each language).
   http://taipei.youbike.com.tw/en/f11.php
   http://taipei.youbike.com.tw/cht/f11.php
 Ugh. Multiple times in the English version (total size approaching 1 Mb). I can't even.
+
+  * that was Oct. 1, now 801 stations Oct. 13
+
+* a recent web page on parsing the open data:
+
+https://dboffat.blogspot.tw/2016/09/pythonopendata.html
+
+referring to another:
+
+http://www.jerrynest.com/python-get-ubike-opendata/
+https://github.com/jlee58/IDCC_HW4
+
+need to again compare this so-called open data with my web page snarfing
+-- last I checked it was only Taipei City, which is silly since New Taipei City is next door,
+and the data was not updated as often as the web site
 
 * interesting snippet displaying map
 

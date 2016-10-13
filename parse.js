@@ -37,14 +37,18 @@ for (var key in siteContent) {
   if (siteContent.hasOwnProperty(key)) {
     var station = siteContent[key];
     var stationEn = siteContentEn[key];
-    station.sna_en = stationEn.sna;
-    station.ar_en = stationEn.ar;
-    if (i < 2) {
-      console.log(key);
-      console.log(siteContent[key]);
-      console.log(siteContentEn[key]);
-    }
+    station.sareaen = stationEn.sarea;
+    station.snaen = stationEn.sna;
+    station.aren = stationEn.ar;
     i++;
   }
 }
-console.log(i + " stations");
+
+// usage:
+//   node parse.js 0183
+//   node parse.js > stations.formatted.js
+if (typeof(process.argv[2]) != 'undefined') {
+  console.log(JSON.stringify(siteContent[process.argv[2]], null, ' '));
+} else {
+  console.log(JSON.stringify(siteContent, null, ' '));  
+}
