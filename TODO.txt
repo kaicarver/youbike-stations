@@ -12,3 +12,22 @@ TODO:
     . update availabilities
     . add/remove any new stations
     . add any new areas
+
+- tip to reverse-engineer Youbike web site:
+  go to http://taipei.youbike.com.tw/en/f11.php
+  Ctl-Shift-C to open Google Debug Console
+  Network Tab, use this to exclude unimportant stuff:
+-.css
+-.gif
+-.jpg
+-.png
+-domain:*.facebook.com
+-domain:*.facebook.net
+-domain:*.g.doubleclick.net
+-domain:*.google.com
+-domain:*.googleadservices.com
+-domain:*.googleapis.com
+-domain:*.googletagmanager.com
+-domain:*.gstatic.com
+-domain:apis.google.com
+... but it turns out the crucial data was... in the .html file

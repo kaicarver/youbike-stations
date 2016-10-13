@@ -20,6 +20,21 @@ The data is transformed into a KML file, which can be imported into Google Maps
 Latest station info
 -------------------
 
+* UPDATE: the latest on latest station info is... I still can't quite believe it:
+
+The data for all 791 stations on the island (6 cities) is embedded in the main PHP-delivered HTML map files (one for each language).
+  http://taipei.youbike.com.tw/en/f11.php
+  http://taipei.youbike.com.tw/cht/f11.php
+Ugh. Multiple times in the English version (total size approaching 1 Mb). I can't even.
+
+* interesting snippet displaying map
+
+  http://www.bootply.com/4r2jxOdvmN
+
+using "open data" from I don't know where exactly (hosted generically on Microsoft Azure)
+
+  https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz
+
 * quasi-CSV format (lines split by '|', fields by '_')
 
   http://its.taipei.gov.tw/atis_index/aspx/Youbike.aspx?Mode=1
