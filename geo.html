@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Geolocation</title>
+    <style>
+       #googlemap {
+        height: 300px;
+        width: 300px;
+       }
+    </style>
+  </head>
+  <body>
+    <h1>HTML5 Geolocation</h1>
+    <div id="where"></div>
+    <div id="googlemap"></div>
+    <button onclick="loadGoogleAPI()">Display Maps</button>
+    <p>This is to keep the Google and Bing Map API keys hidden for now, please enter valid API keys for map display to work:</p>
+    <div id="code">
+      Google Maps API Key: <input type="text" id="gapikey" value="" size="80"><br>
+      Bing Maps API Key: <input type="text" id="bapikey" value="" size="80">
+    </div>
+    <p>See also <a href="http://staticmapmaker.com/">Static Map Maker</a>.</p>
+    <script>
+      var lat = 0;
+      var lon = 0;
+      var zoom = 16;
+      function getGeolocation() {
+	if (navigator.geolocation) {
+	  navigator.geolocation.getCurrentPosition(function(position) {
+	    // this is the HTML5 geolocation magic
+	    lat = position.coords.latitude;
+	    lon = position.coords.longitude;
+	    // display the info
+	    lat = lat.toFixed(5);
+	    lon = lon.toFixed(5);	    
+	    displayGeolocation(lat, lon, zoom);
+	  }, function() {
+	    document.getElementById('where').innerHTML = 'Error: geolocation service failed.<br>';
+	  });
+	} else {
+	  document.getElementById('where').innerHTML = 'Error: browser doesn\'t support geolocation.<br>'
+	};
+      }
+      function displayGeolocation(lat, lon, zoom) {
+	var gmap = 'https://www.google.com/maps/place/'+lat+'+'+lon+'/@'+lat+','+lon+','+zoom+'z';
+	var osmap = 'https://www.openstreetmap.org/?&mlat='+lat+'&mlon='+lon+'#map='+zoom+'/'+lat+'/'+lon;
+	var heremap = 'https://wego.here.com/?map='+lat+','+lon+','+zoom+',normal';
+	document.getElementById('where').innerHTML =
+	  lat + ',' + lon +
+	  '<br>' + link(osmap) + '<br>' + link(gmap) + '<br>' + link(heremap) + '<br>';
+      }
+      // this complicated process is to load the Google API on demand
+      // this is so the API key can be specified separately and confidentially
+      // once loaded, the Google API calls the other functions,
+      // but the geolocation stuff doesn't need Google and should be done separately and independently
+      function loadGoogleAPI() {
+	var gapikey = document.getElementById('gapikey').value;
+	var script_tag = document.createElement('script');
+	script_tag.setAttribute('type', 'text/javascript');
+	script_tag.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key='+gapikey+'&callback=loadAllMaps');
+	(document.getElementsByTagName('head')[0] || document.documentElement).appendChild(script_tag);
+      }
+      function loadAllMaps() {
+	// display maps based on latitude and longitude
+	var hsize = 300;
+	var vsize = 300;
+	var bapikey = document.getElementById('bapikey').value;
+	document.getElementById('where').innerHTML +=
+	  '<img src="http://staticmap.openstreetmap.de/staticmap.php?center='+lat+','+lon+'&zoom='+zoom+'&size='+hsize+'x'+vsize+'&maptype=mapnik" alt="OSM '+lat+','+lon+'">' + ' ' +
+	  // probably can calculate the required bounding box from lat/long and zoom
+	  '<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=121.50436878204347%2C25.069098586086856%2C121.52647018432619%2C25.080740379242183&amp;layer=mapnik" style="border: 1px solid black"></iframe>' + ' ' +
+	'<img src="https://dev.virtualearth.net/REST/V1/Imagery/Map/Road/'+lat+'%2C'+lon+'/'+zoom+'?mapSize='+hsize+','+vsize+'&format=jpeg&pushpin='+lat+','+lon+';37;&key='+bapikey+'" alt="Bing '+lat+','+lon+'">';
+	initMap(parseFloat(lat), parseFloat(lon), zoom);
+      }
+      function link(url) {
+	return '<a href="'+url+'">'+url+'</a>'
+      }
+      function initMap(lat, lon, zoom) {
+	var place = {lat: lat, lng: lon};
+        var googlemap = new google.maps.Map(document.getElementById('googlemap'), {
+          zoom: zoom,
+          center: place
+        });
+        var marker = new google.maps.Marker({
+          position: place,
+          map: googlemap
+        });
+      }
+      window.onload = getGeolocation;
+    </script>
+    <!--
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=loadAllMaps">
+    </script>
+    -->
+  </body>
+</html>
