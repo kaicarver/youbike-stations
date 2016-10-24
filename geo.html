@@ -12,18 +12,21 @@
   <body>
     <h1>HTML5 Geolocation</h1>
     <div id="where"></div>
+    <div id="maps"></div>
     <div id="googlemap"></div>
     <button onclick="loadGoogleAPI()">Display Maps</button>
-    <p>This is to keep the Google and Bing Map API keys hidden for now, please enter valid API keys for map display to work:</p>
+    <p>This is to keep the Google and Bing Map API keys hidden for now, please enter valid API keys for Google and Bing map display to work:</p>
     <div id="code">
-      Google Maps API Key: <input type="text" id="gapikey" value="" size="80"><br>
-      Bing Maps API Key: <input type="text" id="bapikey" value="" size="80">
+      Google Maps API Key: <input type="text" id="gapikey" value="KAIzaSyB6V6ANiVogi5Q1iHWg-KMk8NgC4NSLc-o" size="80"><br>
+      Bing Maps API Key: <input type="text" id="bapikey" value="KAm6NSBwdFJVvjPQFUEdTeOmbEAvJt4GD_yd4_nU_WC_GyhEabZcveqzNlPMxNXi-" size="80">
     </div>
     <p>See also <a href="http://staticmapmaker.com/">Static Map Maker</a>.</p>
     <script>
       var lat = 0;
       var lon = 0;
       var zoom = 16;
+      var hsize = 300;
+      var vsize = 300;
       function getGeolocation() {
 	if (navigator.geolocation) {
 	  navigator.geolocation.getCurrentPosition(function(position) {
@@ -48,27 +51,28 @@
 	document.getElementById('where').innerHTML =
 	  lat + ',' + lon +
 	  '<br>' + link(osmap) + '<br>' + link(gmap) + '<br>' + link(heremap) + '<br>';
+	// display OSM maps that don't require secret API keys
+	document.getElementById('maps').innerHTML =
+	  '<img src="http://staticmap.openstreetmap.de/staticmap.php?center='+lat+','+lon+'&zoom='+zoom+'&size='+hsize+'x'+vsize+'&maptype=mapnik" alt="OSM '+lat+','+lon+'">' + ' ' +
+	  // probably can calculate the required bounding box from lat/long and zoom
+	  '<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=121.50436878204347%2C25.069098586086856%2C121.52647018432619%2C25.080740379242183&amp;layer=mapnik" style="border: 1px solid black"></iframe>' + ' ';
+
       }
-      // this complicated process is to load the Google API on demand
-      // this is so the API key can be specified separately and confidentially
+      // this complicated process is to load the Google API and Bing on demand
+      // this is so the API keys can be specified separately and confidentially
       // once loaded, the Google API calls the other functions,
       // but the geolocation stuff doesn't need Google and should be done separately and independently
       function loadGoogleAPI() {
 	var gapikey = document.getElementById('gapikey').value;
 	var script_tag = document.createElement('script');
 	script_tag.setAttribute('type', 'text/javascript');
-	script_tag.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key='+gapikey+'&callback=loadAllMaps');
+	script_tag.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key='+gapikey+'&callback=loadAPIKeyMaps');
 	(document.getElementsByTagName('head')[0] || document.documentElement).appendChild(script_tag);
       }
-      function loadAllMaps() {
+      function loadAPIKeyMaps() {
 	// display maps based on latitude and longitude
-	var hsize = 300;
-	var vsize = 300;
 	var bapikey = document.getElementById('bapikey').value;
-	document.getElementById('where').innerHTML +=
-	  '<img src="http://staticmap.openstreetmap.de/staticmap.php?center='+lat+','+lon+'&zoom='+zoom+'&size='+hsize+'x'+vsize+'&maptype=mapnik" alt="OSM '+lat+','+lon+'">' + ' ' +
-	  // probably can calculate the required bounding box from lat/long and zoom
-	  '<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=121.50436878204347%2C25.069098586086856%2C121.52647018432619%2C25.080740379242183&amp;layer=mapnik" style="border: 1px solid black"></iframe>' + ' ' +
+	document.getElementById('maps').innerHTML +=
 	'<img src="https://dev.virtualearth.net/REST/V1/Imagery/Map/Road/'+lat+'%2C'+lon+'/'+zoom+'?mapSize='+hsize+','+vsize+'&format=jpeg&pushpin='+lat+','+lon+';37;&key='+bapikey+'" alt="Bing '+lat+','+lon+'">';
 	initMap(parseFloat(lat), parseFloat(lon), zoom);
       }
@@ -90,7 +94,7 @@
     </script>
     <!--
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=loadAllMaps">
+        src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=loadAPIKeyMaps">
     </script>
     -->
   </body>
