@@ -17,6 +17,11 @@ The map can be generated from the latest info about stations and bike availabili
 The data is transformed into a KML file, which can be imported into Google Maps
 (My Places, "create with classic My Maps", Import)
 
+Location-based web page
+-----------------------
+
+https://rawgit.com/kaicarver/youbike-stations/master/geo.html
+
 Latest station info
 -------------------
 
